@@ -5235,6 +5235,7 @@ GameObject:
   - component: {fileID: 1572503252}
   - component: {fileID: 1572503257}
   - component: {fileID: 1572503258}
+  - component: {fileID: 1572503259}
   m_Layer: 0
   m_Name: Anim Cube (1)
   m_TagString: Untagged
@@ -5344,6 +5345,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!114 &1572503258
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1572503251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c50f22a77d6b3418e3d3a4482b6ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0
+  JumpHeight: 15
+--- !u!114 &1572503259
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
