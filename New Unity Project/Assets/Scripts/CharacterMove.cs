@@ -42,5 +42,12 @@ public class CharacterMove : MonoBehaviour {
 	public void Jump(){
 		GetComponent<Rigidbody2D>().Velocity = new Vector2(GetComponent<Rigidbody2D>().velocity.x, JumpHeight);
 	}
+	// This code makes the character move from side to side using the A&D keys
+	if(Input.GetKeyDown (KeyCode.D)){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
+	}
+	if(Input.GetKey (KeyCode.A)){
+		GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed GetComponent<Rigidbody2D>().velocity.y);
+	}
 	}
 }
