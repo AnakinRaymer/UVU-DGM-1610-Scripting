@@ -54,7 +54,7 @@ public class CharacterMove : MonoBehaviour {
 	}
 	if(Input.GetKey (KeyCode.A)){
 		// GetComponent<Rigidbody2D>().velocity = new Vector2(-MoveSpeed, GetComponent<Rigidbody2D>().velocity.y);
-		MoveVelocity = MoveSpeed;
+		MoveVelocity = -MoveSpeed;
 	}
 
 	GetComponent<Rigidbody2D>().velocity = new Vector2(MoveVelocity, GetComponent<Rigidbody2D>().velocity.y);

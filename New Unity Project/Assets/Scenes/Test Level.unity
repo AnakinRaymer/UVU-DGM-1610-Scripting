@@ -125,6 +125,7 @@ GameObject:
   - component: {fileID: 636031936}
   - component: {fileID: 636031935}
   - component: {fileID: 636031939}
+  - component: {fileID: 636031940}
   m_Layer: 0
   m_Name: PC
   m_TagString: Untagged
@@ -250,6 +251,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MoveSpeed: 10
   JumpHeight: 5
+  GroundCheck: {fileID: 1834146537}
+  GroundCheckRadius: 0.5
+  WhatIsGrounded:
+    serializedVersion: 2
+    m_Bits: 512
+--- !u!114 &636031940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 636031934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97c50f22a77d6b3418e3d3a4482b6ec0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MoveSpeed: 0
+  JumpHeight: 0
   GroundCheck: {fileID: 0}
   GroundCheckRadius: 0
   WhatIsGrounded:
@@ -743,7 +762,7 @@ GameObject:
   - component: {fileID: 2132009603}
   - component: {fileID: 2132009602}
   - component: {fileID: 2132009601}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: Ground
   m_TagString: Untagged
   m_Icon: {fileID: 0}
