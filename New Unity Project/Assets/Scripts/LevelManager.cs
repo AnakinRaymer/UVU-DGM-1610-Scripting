@@ -8,7 +8,7 @@ public class LevelManager : MonoBehaviour {
 	private Rigidbody2D Player;
 
 	//Particles
-	public GameObject DeathParticle
+	public GameObject DeathParticle;
 	public GameObject RespawnParticle;
 
 	//Respawn Delay
@@ -22,7 +22,7 @@ public class LevelManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		player = FindObjectOfType<Rigidbody2D> ();
+		// player = FindObjectOfType<Rigidbody2D> ();
 	}
 	
 	public void RespawnPlayer(){
@@ -31,18 +31,29 @@ public class LevelManager : MonoBehaviour {
 
 	public IEnumerator RespawnPlayerCo(){
 		//Generate Death Particle
-		Instantiate (DeathParticle, player.transform.position, player.transform.rotation);
+		Instantiate (DeathParticle, Player.transform.position, Player.transform.rotation);
 		//Hide Player
-		player.enabled = false;
-		player.GetComponent<Renderer> ().enabled = false;
+		// Player.enabled = false;
+		Player.GetComponent<Renderer> ().enabled = false;
 		// Gravity Reset
-		GravityStore = Player.GetComponent<Rigidbody2D>().GravityScale;
-		Player.GetComponent<Rigidbody2D>().GravityScale = 0f;
-		Player.GetComponent<Rigidbody2D>().Velocity = Vector2.zero;
+		GravityStore = Player.GetComponent<Rigidbody2D>().gravityScale;
+		Player.GetComponent<Rigidbody2D>().gravityScale = 0f;
+		Player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
 		// Point Penalty
 		ScoreManager.AddPoints(-PointPenaltyOnDeath);
 		//Debug Message
 		Debug.Log ("Player Respawn");
+		//Respawn Delay
+		yield return new WaitForSeconds (RespawnDelay);
+		//Gravity Restore
+		Player.GetComponent<Rigidbody2D>().gravityScale = GravityStore;
+		//Match Players transform position
+		Player.transform.position = CurrentCheckPoint.transform.position;
+		//Show Player
+		// Player.enabled = true;
+		Player.GetComponent<Renderer> ().enabled = true;
+		//Spawn Particle
+		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
 	}
 	// Update is called once per frame
 	void Update () {
