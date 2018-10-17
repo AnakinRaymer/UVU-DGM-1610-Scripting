@@ -5,7 +5,7 @@ using UnityEngine;
 public class LevelManager : MonoBehaviour {
 
 	public GameObject CurrentCheckPoint;
-	private Rigidbody2D Player;
+	public Rigidbody2D Player;
 
 	//Particles
 	public GameObject DeathParticle;
@@ -54,9 +54,5 @@ public class LevelManager : MonoBehaviour {
 		Player.GetComponent<Renderer> ().enabled = true;
 		//Spawn Particle
 		Instantiate (RespawnParticle, CurrentCheckPoint.transform.position, CurrentCheckPoint.transform.rotation);
-	}
-	// Update is called once per frame
-	void Update () {
-		
 	}
 }

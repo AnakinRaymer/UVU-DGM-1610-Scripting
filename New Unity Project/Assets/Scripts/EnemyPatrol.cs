@@ -20,7 +20,7 @@ public class EnemyPatrol : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-		NotAtEdge = Physics2D.OverlapCircle(WallCheck.position, WallCheckRadius, WhatIsWall);
+		NotAtEdge = Physics2D.OverlapCircle(EdgeCheck.position, WallCheckRadius, WhatIsWall);
 
 		HittingWall = Physics2D.OverlapCircle(WallCheck.position, WallCheckRadius, WhatIsWall);
 
