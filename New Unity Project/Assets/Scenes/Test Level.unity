@@ -5702,8 +5702,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 7
   PC: {fileID: 636031935}
-  EnemyDeath: {fileID: 0}
-  ProjectileParticle: {fileID: 0}
+  EnemyDeath: {fileID: 223019940}
+  ProjectileParticle: {fileID: 121141606}
   PointsForKill: 5
 --- !u!1 &1429460393
 GameObject:
@@ -6086,7 +6086,7 @@ GameObject:
   m_Layer: 0
   m_Name: FirePoint
   m_TagString: Untagged
-  m_Icon: {fileID: -5442936267250999957, guid: 0000000000000000d000000000000000, type: 0}
+  m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
