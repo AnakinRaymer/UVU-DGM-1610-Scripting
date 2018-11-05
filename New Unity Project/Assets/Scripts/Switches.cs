@@ -6,6 +6,9 @@ public class Switches : MonoBehaviour {
 
 	public int num;
 	public string Name;
+	public int PlayerNumber;
+	public bool Working;
+	public string Character;
 
 	// Use this for initialization
 	void Start () {
@@ -56,6 +59,64 @@ public class Switches : MonoBehaviour {
 				print("I dont know " + Name);
 			break;
 		}
+		switch(PlayerNumber){
+			case PlayerOne:
+				print("Selected " + PlayerNumber);
+			break;
+
+			case PlayerTwo:
+				print("Selected " + PlayerNumber);
+			break;
+
+			case PlayerThree:
+				print("Selected " + PlayerNumber);
+			break;
+
+			case PlayerFour:
+				print("Selected " + PlayerNumber);
+			break;
+
+			case PlayerFive:
+				print("Selected " + PlayerNumber);
+			break;
+
+			default:
+				print("No Player Selected");
+			break;
+		}
+		
+		switch(Working){
+			case WorkingYes:
+				if(WorkingYes)
+				Working = true;
+
+			case WorkingNo:
+				if(workingNo)
+				Working = false;
+		}
+
+		switch(Character){
+			case Leonardo:
+				print("Welcome to the fight " + Character);
+			break;
+
+			case Donatello:
+				print("Welcome to the fight " + Character);
+			break;
+
+			case Raphael:
+				print("Welcome to the fight " + Characters);
+			break;
+
+			case Michelangelo:
+				print("Welcome to the fight " + Character);
+			break;
+
+			default:
+				print("No available Characters");
+			break;
+		}
+
 	}
 	
 	// Update is called once per frame
