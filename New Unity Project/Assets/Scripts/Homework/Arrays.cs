@@ -6,6 +6,7 @@ public class Arrays : MonoBehaviour {
 	public int[] Eggs = new int[11];
 
 	public string[] Jedi;
+	public string[] Pet;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,18 @@ public class Arrays : MonoBehaviour {
 
 		foreach(string item in Jedi){
 			print("Jedi Master " + item);
+		}
+
+		Pet = new string [4];
+
+		Pet[0] = "Cats";
+		Pet[1] = "Dogs";
+		Pet[2] = "Birds";
+		Pet[3] = "Rodents";
+		Pet[4] = "Reptiles";
+
+		foreach(string item in Pet){
+			print ("Former pets " + item);
 		}
 	}
 	
