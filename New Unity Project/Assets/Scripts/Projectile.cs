@@ -5,7 +5,7 @@ using UnityEngine;
 public class Projectile : MonoBehaviour {
 
 	public float Speed;
-	public Rigidbody2D PC;
+	public GameObject PC;
 
 	public GameObject EnemyDeath;
 
@@ -13,9 +13,15 @@ public class Projectile : MonoBehaviour {
 
 	public int PointsForKill;
 
+	public int TimeOut;
 	// Use this for initialization
 	void Start () {
 		
+		PC = GameObject.Find("PC");
+
+		EnemyDeath = Resources.Load("PreFab/Particle") as GameObject;
+		ProjectileParticle = Resources.Load("PreFab/Particle") as GameObject;
+
 		if(PC.transform.localScale.x < 0)
 			Speed = -Speed;
 

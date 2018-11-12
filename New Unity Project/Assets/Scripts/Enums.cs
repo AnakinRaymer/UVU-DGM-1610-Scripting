@@ -2,17 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enums : MonoBehaviour {
+// public class Enums : MonoBehaviour {
 
-	enum Inventory {cheese, meat, sword, shield, map, backpack, bow, arrows};
+// 	enum Inventory {cheese, meat, sword, shield, map, backpack, bow, arrows};
 
 	// Use this for initialization
-	void Start () {
-		print("cheese = " + Inventory, cheese);
-	}
+	// void Start () {
+	// 	print("cheese = " + Inventory, cheese);
+	// }
 	
 	// Update is called once per frame
-	void Update () {
+	// void Update () {
 		
-	}
-}
+// 	}
+// }
