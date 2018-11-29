@@ -1,9 +1,11 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AmmoManager : MonoBehaviour {
 	public static int Ammo;
+	public PlayerShoot PlayerShoot;
 
 	Text AmmoText;
 
@@ -22,10 +24,10 @@ public class AmmoManager : MonoBehaviour {
 		AmmoText.text = " " + Ammo;
 
 		if (Ammo < 0)
-			Projectile = true
+			PlayerShoot.Ammunition = true;
 
 		else (Ammo > 0)
-			Projectile = false
+			PlayerShoot.Ammunition = false;
 	}
 
 	public static void AddPoints (int PointsToAdd) {

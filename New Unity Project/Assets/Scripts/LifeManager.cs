@@ -22,10 +22,10 @@ public class LifeManager : MonoBehaviour {
 		LifeText.text = " " + Lives;
 
 		if (Lives < 0)
-			KillPlayer = false
+			KillPlayer = false;
 
 		else (Lives > 0)
-			KillPlayer = true
+			KillPlayer = true;
 
 		
 	}
