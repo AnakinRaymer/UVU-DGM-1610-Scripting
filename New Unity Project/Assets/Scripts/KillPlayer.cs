@@ -5,6 +5,7 @@ using UnityEngine;
 public class KillPlayer : MonoBehaviour {
 
 	public LevelManager LevelManager;
+	public bool isAlive;
 
 	// Use this for initialization
 	void Start () {

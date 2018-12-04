@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class ScoreManager : MonoBehaviour {
 	public static int Score;
 	public int WinScore;
-	public text WinText;
+	public Text WinText;
 
 	Text ScoreText;
 
@@ -19,7 +19,7 @@ public class ScoreManager : MonoBehaviour {
 
 		Score = 0;
 
-		WinText.GetComponent<text>();
+		WinText.GetComponent<Text>();
 	}
 	
 	// Update is called once per frame

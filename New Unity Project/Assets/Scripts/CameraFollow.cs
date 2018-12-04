@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-	public CharacterMover PC;
+	public CharacterMove PC;
 
 	public bool isFollowing;
 
@@ -14,7 +14,7 @@ public class CameraFollow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		PC = FindObjectOfType<CharacterMover>();
+		PC = FindObjectOfType<CharacterMove>();
 
 		isFollowing = true;
 	}

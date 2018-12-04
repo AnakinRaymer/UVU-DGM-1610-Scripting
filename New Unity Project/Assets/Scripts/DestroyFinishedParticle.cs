@@ -16,11 +16,11 @@ public class DestroyFinishedParticle : MonoBehaviour {
 		if(ThisParticleSystem.isPlaying)
 			return;
 
-			Destroy (GameObject);
+			Destroy (gameObject);
 		
 	}
 
 	void OnBecameInvisible (){
-		Destroy (GameObject);
+		Destroy (gameObject);
 	}
 }

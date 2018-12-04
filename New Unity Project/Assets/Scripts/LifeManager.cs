@@ -1,17 +1,19 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class LifeManager : MonoBehaviour {
 	public static int Lives;
-
+	public GameObject Player;
+	public KillPlayer Killplayer;
 	Text LifeText;
 
 
 	// Use this for initialization
 	void Start () {
 		LifeText = GetComponent<Text>();
-
+		Killplayer = Player.GetComponent<KillPlayer>();
 		Lives = 0;
 	}
 	
@@ -22,10 +24,10 @@ public class LifeManager : MonoBehaviour {
 		LifeText.text = " " + Lives;
 
 		if (Lives < 0)
-			KillPlayer = false;
+			Killplayer.isAlive = false;
 
-		else (Lives > 0)
-			KillPlayer = true;
+		else
+			Killplayer.isAlive = true;
 
 		
 	}

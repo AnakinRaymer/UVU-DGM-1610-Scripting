@@ -5111,6 +5111,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentCheckPoint: {fileID: 2009332461}
   Player: {fileID: 636031935}
+  PC2: {fileID: 0}
   DeathParticle: {fileID: 121141606}
   RespawnParticle: {fileID: 121141606}
   RespawnDelay: 1
@@ -5128,6 +5129,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 1872115979}
   Projectile: {fileID: 1422599688}
+  Ammunition: 0
 --- !u!114 &636031943
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5141,6 +5143,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Eggs: 0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000
   Jedi: []
+  Pet: []
 --- !u!1 &1129865385
 GameObject:
   m_ObjectHideFlags: 0
@@ -5303,6 +5306,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c5a44db662818e347b728da9683aed2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  WinScore: 0
+  WinText: {fileID: 0}
 --- !u!1 &1385926736
 GameObject:
   m_ObjectHideFlags: 0
@@ -5549,6 +5554,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FirePoint: {fileID: 1872115979}
   Projectile: {fileID: 1422599688}
+  Ammunition: 0
 --- !u!212 &1422599692
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5624,6 +5630,7 @@ MonoBehaviour:
   EnemyDeath: {fileID: 223019940}
   ProjectileParticle: {fileID: 121141606}
   PointsForKill: 5
+  TimeOut: 0
 --- !u!1 &1429460393
 GameObject:
   m_ObjectHideFlags: 0
@@ -5817,15 +5824,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 1, g: 0.14646265, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1654871589
@@ -5835,8 +5842,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1654871587}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.87, y: 1.71, z: -9.8984375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.87, y: 1.71, z: 0}
+  m_LocalScale: {x: 4.1923, y: 4.1923, z: 4.1923}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 11
@@ -5951,6 +5958,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CurrentCheckPoint: {fileID: 0}
   Player: {fileID: 0}
+  PC2: {fileID: 0}
   DeathParticle: {fileID: 0}
   RespawnParticle: {fileID: 0}
   RespawnDelay: 0
@@ -6031,6 +6039,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   LevelManager: {fileID: 0}
+  isAlive: 0
 --- !u!61 &1852631334
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -6148,15 +6157,15 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
+  m_Color: {r: 0, g: 0.9433962, b: 0.03246114, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.16, y: 0.16}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &2005481246
@@ -6166,8 +6175,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2005481244}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 7.04, y: 0.82, z: -9.8984375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 6.71, y: 0.92, z: -0}
+  m_LocalScale: {x: 4.1105, y: 4.1105, z: 4.1105}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 12
